@@ -13,7 +13,6 @@ class ServiceActor extends Actor with SampleAppService {
   def receive = runRoute(defaultRoute)
 }
 
-// this trait defines our service behavior independently from the service actor
 trait SampleAppService extends HttpService {
   val defaultRoute =
     path("") {
@@ -26,4 +25,3 @@ trait SampleAppService extends HttpService {
       }
     }
 }
-
