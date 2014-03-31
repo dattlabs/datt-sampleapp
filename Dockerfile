@@ -11,5 +11,6 @@ RUN `# build the jar`; \
 
 # Add app to supervisor
 RUN mkdir /var/log/supervisor/sampleapp
-ADD files/sampleapp.conf /etc/supervisor/conf.d/
+ADD files/ /files/
+RUN ln -fs /files/sampleapp.conf /etc/supervisor/conf.d/sampleapp.conf
 
