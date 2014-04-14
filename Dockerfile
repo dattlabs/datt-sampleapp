@@ -14,3 +14,4 @@ RUN mkdir /var/log/supervisor/sampleapp
 ADD files/ /files/
 RUN ln -fs /files/sampleapp.conf /etc/supervisor/conf.d/sampleapp.conf
 
+EXPOSE 80
